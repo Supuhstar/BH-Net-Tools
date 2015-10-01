@@ -22,10 +22,4 @@ public interface Transmittable<HeaderType extends Header, BodyType extends Body,
 	public BodyType getBody();
 
 	public FooterType getFooter();
-
-	public void setHeader(HeaderType newHeader);
-
-	public void setBody(BodyType newBody);
-
-	public void getFooter(FooterType newFooter);
 }

@@ -1,6 +1,5 @@
 package org.bh.tools.net.msg;
 
-import org.bh.tools.net.msg.Field;
 import org.bh.tools.util.ArrayPP;
 
 
@@ -49,14 +48,13 @@ public abstract class FieldedSection<BaseFieldType extends Field>
 	}
 
 	/**
-	 * @deprecated You really ought not to think of this as text. If you want the length of the header in bytes, look
-	 * to {@link #size() size()}
+	 * @deprecated You really ought not to think of this as text. If you want the length of the fielded section in
+	 * bytes, look to {@link #size() size()}
 	 */
 	@Override
 	public int length() {
 		return convertToText().length();
 	}
-
 
 
 

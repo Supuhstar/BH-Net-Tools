@@ -97,7 +97,6 @@ public class Message implements Transmittable<Header, Body, Footer> {
 		return header;
 	}
 
-	@Override
 	public void setHeader(Header newHeader) {
 		header = newHeader;
 	}
@@ -107,7 +106,6 @@ public class Message implements Transmittable<Header, Body, Footer> {
 		return body;
 	}
 
-	@Override
 	public void setBody(Body newBody) {
 		body = newBody;
 	}
@@ -117,9 +115,7 @@ public class Message implements Transmittable<Header, Body, Footer> {
 		return footer;
 	}
 
-	@Override
-	public void getFooter(Footer newFooter) {
+	public void setFooter(Footer newFooter) {
 		footer = newFooter;
 	}
-
 }
