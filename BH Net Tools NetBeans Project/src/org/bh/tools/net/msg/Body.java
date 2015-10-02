@@ -28,7 +28,7 @@ public class Body<TextType extends CharSequence> implements MessagePiece<TextTyp
 	/**
 	 * The most Unicodiest charset we could find.
 	 */
-	private static final Charset UNICODIEST_CHARSET;
+	public static final Charset UNICODIEST_CHARSET;
 
 	static {
 		Charset c;
